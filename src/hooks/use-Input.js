@@ -23,10 +23,18 @@ const useInput = (validateValue) => {
   return {
     value: enteredValue,
     isValid: valueIsValid,
-    hasError,
-    valueChangeHandler,
-    inputBlurHandler,
-    reset,
+    error: hasError,
+    changeHandler: valueChangeHandler,
+    blurHAndler: inputBlurHandler,
+    resetInput: reset,
   };
+  // return {
+  //   value: enteredValue,
+  //   isValid: valueIsValid,
+  //   hasError,
+  //   valueChangeHandler,
+  //   inputBlurHandler,
+  //   reset,
+  // };
 };
 export default useInput;
